@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMEEN SAHIL | Entrepreneur & Innovator &middot; Technology Entrepreneur & AI Developer</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Ameen Sahil - Technology Entrepreneur, Founder, and AI Developer. Building innovative software solutions, enterprise ERP/EMRs, AI-powered applications, and scaling business growth." />
+  <meta name="keywords" content="Ameen Sahil, Ameen Sahil M, ameenbakka, .NET Developer, AI Developer, Technology Entrepreneur, Winner ERP, Care4 EMR, Umbraco CMS, uOwlDev, Kerala, Dubai, Saudi Arabia" />
+  <meta name="author" content="Ameen Sahil" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Ameen Sahil | Technology Entrepreneur & AI Solutions Developer" />
+  <meta property="og:description" content="Building Digital Solutions. Empowering Businesses. Scaling the Future." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ameenbakka.com" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#07090e',
+              surface: '#0f172a',
+              card: '#111827',
+              border: 'rgba(255, 255, 255, 0.08)',
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              violet: '#8b5cf6'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body class="bg-[#07090e] text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 bg-grid-pattern relative">
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION BAR                                                            -->
+  <!-- ========================================================================= -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo / Personal Brand -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-[#07090e] rounded-[10px] flex items-center justify-center">
+            <span class="font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400 text-lg">AS</span>
+          </div>
+        </div>
+        <div>
+          <span class="font-display font-bold tracking-tight text-white text-lg group-hover:text-cyan-400 transition-colors">AMEEN SAHIL</span>
+          <span class="hidden sm:block text-[11px] font-mono text-cyan-400 tracking-wider">ENTREPRENEUR & AI DEV</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Strictly the requested sections) -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#hero" class="nav-link text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Home</a>
+        <a href="#skills" class="nav-link text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Skills & Expertise</a>
+        <a href="#projects" class="nav-link text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#services" class="nav-link text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+        <a href="#contact" class="nav-link text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact Us</a>
+      </nav>
+
+      <!-- Desktop Quick Actions -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://wa.me/917909221323?text=Hi%20Ameen,%20I%20would%20like%20to%20discuss%20a%20project" 
+           target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition-all">
+          <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all hover:scale-[1.02] active:scale-[0.98]">
+          <span>Let's Build Together</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4 stroke-[2.5]"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white" aria-label="Toggle menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-950/95 backdrop-blur-xl border-b border-slate-800 px-6 py-6 space-y-4">
+      <nav class="flex flex-col gap-4">
+        <a href="#hero" class="text-base font-medium text-slate-200 hover:text-cyan-400 transition-colors">Home</a>
+        <a href="#skills" class="text-base font-medium text-slate-200 hover:text-cyan-400 transition-colors">Skills & Expertise</a>
+        <a href="#projects" class="text-base font-medium text-slate-200 hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#services" class="text-base font-medium text-slate-200 hover:text-cyan-400 transition-colors">Services</a>
+        <a href="#contact" class="text-base font-medium text-slate-200 hover:text-cyan-400 transition-colors">Contact Us</a>
+      </nav>
+      <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
+        <a href="#contact" class="w-full text-center py-3 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400">
+          Let's Build Together ↗
+        </a>
+        <a href="https://wa.me/917909221323" target="_blank" class="w-full text-center py-2.5 rounded-xl text-sm font-medium text-slate-300 bg-slate-900 border border-slate-800">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HERO SECTION                                                           -->
+  <!-- ========================================================================= -->
+  <section id="hero" class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+    <!-- Ambient glow orbs -->
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[400px] bg-gradient-to-tr from-cyan-500/15 via-emerald-500/10 to-violet-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Main Hero 2-Column Showcase -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+        <!-- Left Column: Story & Vision (7 cols) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+
+          <!-- Top Status Pill -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 backdrop-blur-md shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 live-indicator"></span>
+            <span class="text-xs font-mono tracking-wider text-cyan-300 font-semibold uppercase">
+              FOUNDER &middot; AI DEVELOPER &middot; TECH ENTREPRENEUR
+            </span>
+          </div>
+
+          <!-- Name & Primary Identity -->
+          <div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white font-display leading-tight">
+              AMEEN SAHIL
+            </h1>
+            <p class="text-xl sm:text-2xl font-bold text-gradient-cyan tracking-wide mt-1">
+              Entrepreneur &amp; Innovator
+            </p>
+          </div>
+
+          <!-- Core Value Punchline -->
+          <h2 class="text-xl sm:text-3xl font-bold text-slate-100 leading-snug max-w-xl mx-auto lg:mx-0">
+            Building Digital Solutions.<br class="hidden sm:inline" />
+            Empowering Businesses. Scaling the Future.
+          </h2>
+
+          <!-- Clean, Impactful Value Statement -->
+          <p class="text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
+            I build innovative software solutions and AI-powered applications that help businesses scale. From custom enterprise platforms to intelligent automation, I turn technology into real business growth.
+          </p>
+
+          <!-- 4 Core Pillars -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1 pb-1">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/80 border border-slate-800 text-cyan-300 flex items-center gap-1.5">
+              <i data-lucide="cpu" class="w-3.5 h-3.5 text-cyan-400"></i>
+              AI &amp; Automation
+            </span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/80 border border-slate-800 text-emerald-300 flex items-center gap-1.5">
+              <i data-lucide="code-2" class="w-3.5 h-3.5 text-emerald-400"></i>
+              Software Engineering
+            </span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/80 border border-slate-800 text-violet-300 flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-violet-400"></i>
+              Digital Transformation
+            </span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/80 border border-slate-800 text-blue-300 flex items-center gap-1.5">
+              <i data-lucide="trending-up" class="w-3.5 h-3.5 text-blue-400"></i>
+              Business Growth
+            </span>
+          </div>
+
+          <!-- Primary Actions -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/35 transition-all hover:scale-[1.02] active:scale-[0.98]">
+              <span>Let's Build Together</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 stroke-[2.5]"></i>
+            </a>
+
+            <a href="#projects" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/90 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/40 transition-all">
+              <i data-lucide="layers" class="w-4 h-4 text-cyan-400"></i>
+              <span>Explore My Work</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Editorial Portrait Frame (5 cols) -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-sm sm:max-w-md">
+
+            <!-- Ambient Glow Backdrop -->
+            <div class="absolute -inset-1 bg-gradient-to-tr from-cyan-500/30 via-emerald-500/20 to-violet-600/30 rounded-3xl blur-2xl opacity-75"></div>
+
+            <!-- Sleek Minimalist Portrait Container -->
+            <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-950/90 shadow-2xl backdrop-blur-xl group">
+
+              <!-- Portrait Image -->
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-900">
+                <img src="assets/images/ameen-sahil.jpg" 
+                     alt="Ameen Sahil - Technology Entrepreneur & AI Solutions Developer" 
+                     class="w-full h-full object-cover object-top filter brightness-105 contrast-105 transition-transform duration-700 group-hover:scale-105" />
+                
+                <!-- Bottom gradient fade -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+
+                <!-- Floating Top-Right Status -->
+                <div class="absolute top-4 right-4 z-10 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-950/80 border border-emerald-500/30 backdrop-blur-md shadow-lg">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 live-indicator"></span>
+                  <span class="text-[11px] font-mono font-medium text-emerald-300">Open for Global Scaling</span>
+                </div>
+
+                <!-- Bottom Clean Title Strip -->
+                <div class="absolute bottom-3 left-3 right-3 z-10 px-4 py-2.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-800/80 flex items-center justify-between">
+                  <div>
+                    <div class="text-sm font-bold text-white font-display">Ameen Sahil</div>
+                    <div class="text-[11px] text-cyan-400 font-mono">Founder &middot; IT Solutions Firm</div>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <a href="https://www.linkedin.com/in/ameenbakka" target="_blank" rel="noopener noreferrer" 
+                       class="w-7 h-7 rounded-lg bg-slate-900 hover:bg-[#0077b5] text-slate-300 hover:text-white border border-slate-800 flex items-center justify-center transition-colors" title="LinkedIn">
+                      <i data-lucide="linkedin" class="w-3.5 h-3.5"></i>
+                    </a>
+                    <a href="https://wa.me/917909221323" target="_blank" rel="noopener noreferrer" 
+                       class="w-7 h-7 rounded-lg bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white border border-slate-800 flex items-center justify-center transition-colors" title="WhatsApp">
+                      <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Clean Horizontal Metrics Bar Across Bottom of Hero -->
+      <div class="mt-14 pt-8 border-t border-slate-800/80 grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card p-4 rounded-xl border border-slate-800/80 flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-bold font-display text-white">4+ Years</div>
+            <div class="text-xs text-slate-400">Engineering &amp; IT Leadership</div>
+          </div>
+        </div>
+
+        <div class="glass-card p-4 rounded-xl border border-slate-800/80 flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-bold font-display text-emerald-400">50+</div>
+            <div class="text-xs text-slate-400">Systems &amp; Websites Delivered</div>
+          </div>
+        </div>
+
+        <div class="glass-card p-4 rounded-xl border border-slate-800/80 flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-400 flex items-center justify-center shrink-0">
+            <i data-lucide="server" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-bold font-display text-violet-400">100+</div>
+            <div class="text-xs text-slate-400">Production APIs &amp; Modules</div>
+          </div>
+        </div>
+
+        <div class="glass-card p-4 rounded-xl border border-slate-800/80 flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-bold font-display text-blue-400">GCC &amp; Global</div>
+            <div class="text-xs text-slate-400">Saudi Arabia, UAE, India</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 2. SKILLS AND EXPERTISE SECTION                                           -->
+  <!-- ========================================================================= -->
+  <section id="skills" class="py-24 relative border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase bg-cyan-950/40 px-3 py-1 rounded-full border border-cyan-800/40">
+          Core Competencies & Stack
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-display">
+          Skills & Expertise
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          From full-stack enterprise architecture with .NET and high-performance SQL to cutting-edge AI integrations and digital business scaling.
+        </p>
+      </div>
+
+      <!-- Skills Grid (Comprehensive breakdown from CV & Request) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Backend & Enterprise Engineering -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-5 text-cyan-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="server" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Backend Development</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Building scalable, testable, and high-throughput server-side applications, microservices, and 100+ RESTful APIs.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-pill">C#</span>
+              <span class="badge-pill">.NET Core</span>
+              <span class="badge-pill">ASP.NET MVC</span>
+              <span class="badge-pill">ASP.NET Web API</span>
+              <span class="badge-pill">RESTful APIs</span>
+              <span class="badge-pill">Umbraco CMS</span>
+              <span class="badge-pill">WinForms</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] font-mono text-cyan-400">
+            Specialization: High-Concurrency Enterprise Systems
+          </div>
+        </div>
+
+        <!-- 2. AI & Intelligent Automation -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between group border-cyan-500/30">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-5 text-emerald-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 flex items-center justify-between">
+              <span>AI & Intelligent Automation</span>
+              <span class="text-[10px] font-mono uppercase bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded">Core Focus</span>
+            </h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Harnessing modern Large Language Models and automation pipelines to build smart features and operational efficiency.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-pill">Claude</span>
+              <span class="badge-pill">ChatGPT</span>
+              <span class="badge-pill">GitHub Copilot</span>
+              <span class="badge-pill">AI-Assisted Architecture</span>
+              <span class="badge-pill">Prompt Engineering</span>
+              <span class="badge-pill">Automated Workflows</span>
+              <span class="badge-pill">Intelligent Integrations</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] font-mono text-emerald-400">
+            Specialization: Turning AI into Practical Business Growth
+          </div>
+        </div>
+
+        <!-- 3. Databases, ORM & High-Speed Queries -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mb-5 text-violet-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Databases & Data Systems</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Complex transactional queries, relational schema design, financial accuracy, and microsecond query optimization.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-pill">SQL Server</span>
+              <span class="badge-pill">MySQL</span>
+              <span class="badge-pill">Entity Framework Core</span>
+              <span class="badge-pill">Dapper</span>
+              <span class="badge-pill">ADO.NET</span>
+              <span class="badge-pill">Stored Procedures</span>
+              <span class="badge-pill">Triggers & Indexing</span>
+              <span class="badge-pill">LINQ</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] font-mono text-violet-400">
+            Specialization: High-Speed Financial & EMR Data Logic
+          </div>
+        </div>
+
+        <!-- 4. Frontend & Interactive UI -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-5 text-blue-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="layout" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Frontend Engineering</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Crafting responsive, intuitive, and accessible user interfaces that convert visitors into active customers.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-pill">React</span>
+              <span class="badge-pill">JavaScript (ES6+)</span>
+              <span class="badge-pill">Bootstrap</span>
+              <span class="badge-pill">Tailwind CSS</span>
+              <span class="badge-pill">HTML5 & CSS3</span>
+              <span class="badge-pill">jQuery & Ajax</span>
+              <span class="badge-pill">Kendo UI</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] font-mono text-blue-400">
+            Specialization: Responsive CMS & Enterprise Dashboards
+          </div>
+        </div>
+
+        <!-- 5. DevOps, Cloud & Architecture -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-5 text-amber-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="cloud-cog" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">DevOps & Architecture</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Engineering reliable pipelines, containerized deployments, clean architectures, and secure identity handling.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-pill">Docker</span>
+              <span class="badge-pill">Docker Compose</span>
+              <span class="badge-pill">Azure Cloud</span>
+              <span class="badge-pill">Clean Architecture</span>
+              <span class="badge-pill">Microservices</span>
+              <span class="badge-pill">Monolithic Architecture</span>
+              <span class="badge-pill">GitHub Actions CI/CD</span>
+              <span class="badge-pill">RabbitMQ</span>
+              <span class="badge-pill">JWT & Role-Auth</span>
+              <span class="badge-pill">xUnit Testing</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] font-mono text-amber-400">
+            Specialization: Zero-Downtime Clean Architecture
+          </div>
+        </div>
+
+        <!-- 6. Digital Transformation & Growth -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center mb-5 text-pink-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="target" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Growth & Marketing Strategy</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Combining technical software excellence with data-driven marketing to scale business revenue and visibility.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-pill">Technical SEO</span>
+              <span class="badge-pill">Google Ads</span>
+              <span class="badge-pill">Meta Ads</span>
+              <span class="badge-pill">Performance Marketing</span>
+              <span class="badge-pill">Social Media Marketing</span>
+              <span class="badge-pill">Conversion Rate Optimization</span>
+              <span class="badge-pill">B2B Lead Acquisition</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] font-mono text-pink-400">
+            Specialization: Scaling Tech Startups & Client Firms
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. PROJECTS SECTION                                                       -->
+  <!-- ========================================================================= -->
+  <section id="projects" class="py-24 relative border-t border-slate-900 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="max-w-2xl space-y-3">
+          <span class="text-xs font-mono font-bold tracking-widest text-emerald-400 uppercase bg-emerald-950/40 px-3 py-1 rounded-full border border-emerald-800/40">
+            Shipped Solutions & Live Deployments
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-display">
+            Featured Projects
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Explore 50+ enterprise systems, SaaS platforms, and client web deployments across GCC, UAE, and international markets.
+          </p>
+        </div>
+
+        <!-- Search Bar for quick exploration -->
+        <div class="relative w-full md:w-72">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input type="text" id="project-search" placeholder="Search systems, tech, or clients..." 
+                 class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors" />
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap items-center gap-2 mb-10 pb-2 border-b border-slate-800/80">
+        <button data-filter="all" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20 transition-all">
+          All Projects (17)
+        </button>
+        <button data-filter="enterprise" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all">
+          Enterprise Systems & ERP (3)
+        </button>
+        <button data-filter="saas" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all">
+          SaaS & Management Systems (3)
+        </button>
+        <button data-filter="uowldev" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all">
+          uOwlDev Client Deployments (11)
+        </button>
+      </div>
+
+      <!-- Dynamic Projects Grid (Populated via assets/js/main.js) -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project cards injected dynamically -->
+      </div>
+
+      <!-- Bottom uOwlDev Notice Card -->
+      <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-slate-900/90 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-base font-bold text-white">Need a Bespoke Software or Web Platform for Your Business?</h4>
+            <p class="text-xs sm:text-sm text-slate-400">Whether it's an enterprise ERP, EMR hospital portal, or high-converting business website, let's architect it right.</p>
+          </div>
+        </div>
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-white text-slate-950 hover:bg-slate-200 transition-all shrink-0">
+          <span>Start a Project</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. SERVICES SECTION                                                       -->
+  <!-- ========================================================================= -->
+  <section id="services" class="py-24 relative border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono font-bold tracking-widest text-violet-400 uppercase bg-violet-950/40 px-3 py-1 rounded-full border border-violet-800/40">
+          How I Empower Businesses
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-display">
+          Services
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          End-to-end technology solutions tailored for business scale, operational automation, and long-term commercial dominance.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Service 1 -->
+        <div class="glass-card rounded-2xl p-8 relative group">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="database" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Enterprise ERP & Custom Software</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Bespoke ERP, EMR hospital suites, inventory systems, and multi-tenant platforms built with robust .NET Core and SQL Server backends. Compliant with regional regulations including Saudi ZATCA e-invoicing.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-400 mb-6">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Financial Accounting & Invoicing Systems</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Healthcare EMR & Token Management</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> High-Throughput Relational Databases</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 group-hover:translate-x-1 transition-transform">
+            <span>Inquire for Enterprise Solutions</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="glass-card rounded-2xl p-8 relative group border-cyan-500/30">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 flex items-center justify-between">
+            <span>AI & Intelligent Automation</span>
+            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">High Demand</span>
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Infusing smart AI capabilities into existing enterprise software. From LLM-assisted document parsing to automated customer routing, conversational bots, and predictive analytics.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-400 mb-6">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Custom LLM & Agent Integrations</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> End-to-End Workflow Automation</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Intelligent Queue & Customer Handling</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 group-hover:translate-x-1 transition-transform">
+            <span>Discuss AI Automation</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="glass-card rounded-2xl p-8 relative group">
+          <div class="w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400 mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="globe-2" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Enterprise CMS & Web Engineering</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Architecting world-class Umbraco CMS websites, client portals, and dynamic web applications. Engineered for optimal speed, mobile responsiveness, and effortless content management.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-400 mb-6">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-violet-400"></i> Umbraco CMS Block Grid Architectures</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-violet-400"></i> Modern React & Responsive Interfaces</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-violet-400"></i> High-Speed Corporate Portals</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-violet-400 hover:text-violet-300 group-hover:translate-x-1 transition-transform">
+            <span>Build Your Web Platform</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="glass-card rounded-2xl p-8 relative group">
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="cloud" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Cloud Architecture & Web APIs</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Robust cloud engineering, Docker containerization, Azure setups, microservice isolation, and secure RESTful Web APIs integrated with JWT authentication and Swagger documentation.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-400 mb-6">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Docker & Docker Compose Containerization</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Microservices & Clean Architecture</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> CI/CD Pipeline Automation (GitHub Actions)</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 group-hover:translate-x-1 transition-transform">
+            <span>Consult on Cloud Architecture</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="glass-card rounded-2xl p-8 relative group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="trending-up" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Digital Transformation & Growth</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Helping offline and traditional businesses transition to digital platforms. Strategic roadmaps, legacy software modernization, and growth funnels that unlock scalable revenue.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-400 mb-6">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Legacy to Modern Cloud Migration</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Process Digitization & Paperless Workflows</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Business Operations Scaling</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-400 hover:text-amber-300 group-hover:translate-x-1 transition-transform">
+            <span>Explore Digital Transformation</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="glass-card rounded-2xl p-8 relative group">
+          <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="megaphone" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Performance Marketing & SEO</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Targeted Google Ads, Meta Ads campaigns, and technical SEO architecture engineered to position your software products and services directly before high-intent buyers.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-400 mb-6">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Technical SEO for Web Applications</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Paid Acquisition (Google & Meta Ads)</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Conversion Rate Optimization (CRO)</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-pink-400 hover:text-pink-300 group-hover:translate-x-1 transition-transform">
+            <span>Grow Your Customer Base</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. CONTACT US SECTION                                                     -->
+  <!-- ========================================================================= -->
+  <section id="contact" class="py-24 relative border-t border-slate-900 bg-slate-950/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase bg-cyan-950/40 px-3 py-1 rounded-full border border-cyan-800/40">
+          Get In Touch & Collaborate
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-display">
+          Contact Us
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Have an enterprise software project, custom AI initiative, or web product in mind? Let's connect and build scalable digital solutions together.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+        <!-- Left Column: Direct Contact Info & Verified Social Links -->
+        <div class="lg:col-span-5 space-y-6">
+
+          <!-- Direct Communication Cards -->
+          <div class="glass-card p-6 rounded-2xl space-y-5">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+              <span>Direct Channels</span>
+            </h3>
+
+            <!-- Email Card -->
+            <div class="flex items-start justify-between gap-3 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400 font-medium">Direct Email</div>
+                  <a href="mailto:ameensahil1323@gmail.com" class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">
+                    ameensahil1323@gmail.com
+                  </a>
+                </div>
+              </div>
+              <button class="copy-btn p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors" data-copy="ameensahil1323@gmail.com" title="Copy Email">
+                <i data-lucide="copy" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Phone / WhatsApp Card -->
+            <div class="flex items-start justify-between gap-3 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400 font-medium">Phone & WhatsApp</div>
+                  <a href="https://wa.me/917909221323?text=Hi%20Ameen,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="text-sm font-semibold text-white hover:text-emerald-400 transition-colors">
+                    +91 7909221323
+                  </a>
+                </div>
+              </div>
+              <a href="https://wa.me/917909221323?text=Hi%20Ameen,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="p-2 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition-colors" title="Chat on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 text-violet-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 font-medium">Location & Global Reach</div>
+                <div class="text-sm font-semibold text-white">Kerala, India &middot; Serving GCC & Worldwide</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Professional & Social Connect (Verified from web research) -->
+          <div class="glass-card p-6 rounded-2xl space-y-4">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300 font-mono">
+              Connect Across Digital Profiles
+            </h3>
+
+            <div class="grid grid-cols-2 gap-3">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ameenbakka" target="_blank" rel="noopener noreferrer" 
+                 class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 hover:bg-[#0077b5]/15 border border-slate-800 hover:border-[#0077b5]/50 transition-all group">
+                <div class="w-8 h-8 rounded-lg bg-slate-800 group-hover:bg-[#0077b5] text-slate-300 group-hover:text-white flex items-center justify-center transition-colors">
+                  <i data-lucide="linkedin" class="w-4 h-4"></i>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-xs font-bold text-white group-hover:text-[#38bdf8] truncate">LinkedIn</div>
+                  <div class="text-[11px] text-slate-400 truncate">@ameenbakka</div>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/ameensahil1323" target="_blank" rel="noopener noreferrer" 
+                 class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-600 transition-all group">
+                <div class="w-8 h-8 rounded-lg bg-slate-800 group-hover:bg-slate-700 text-slate-300 group-hover:text-white flex items-center justify-center transition-colors">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-xs font-bold text-white truncate">GitHub</div>
+                  <div class="text-[11px] text-slate-400 truncate">@ameensahil1323</div>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/ameenbakka" target="_blank" rel="noopener noreferrer" 
+                 class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 hover:bg-pink-500/15 border border-slate-800 hover:border-pink-500/50 transition-all group">
+                <div class="w-8 h-8 rounded-lg bg-slate-800 group-hover:bg-gradient-to-tr group-hover:from-amber-500 group-hover:to-pink-500 text-slate-300 group-hover:text-white flex items-center justify-center transition-colors">
+                  <i data-lucide="instagram" class="w-4 h-4"></i>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-xs font-bold text-white group-hover:text-pink-400 truncate">Instagram</div>
+                  <div class="text-[11px] text-slate-400 truncate">@ameenbakka</div>
+                </div>
+              </a>
+
+              <!-- Linktree / Hub -->
+              <a href="https://linktr.ee/ameenbakka" target="_blank" rel="noopener noreferrer" 
+                 class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 hover:bg-emerald-500/15 border border-slate-800 hover:border-emerald-500/50 transition-all group">
+                <div class="w-8 h-8 rounded-lg bg-slate-800 group-hover:bg-emerald-500 text-slate-300 group-hover:text-slate-950 flex items-center justify-center transition-colors">
+                  <i data-lucide="link" class="w-4 h-4"></i>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-xs font-bold text-white group-hover:text-emerald-400 truncate">Linktree</div>
+                  <div class="text-[11px] text-slate-400 truncate">All Links Hub</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Personal Domain indicator -->
+            <div class="pt-2 text-center text-xs text-slate-400">
+              Personal Domain: <a href="https://ameenbakka.com" target="_blank" class="text-cyan-400 hover:underline">ameenbakka.com</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Inquiry Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-7 sm:p-9 rounded-2xl relative">
+            <h3 class="text-2xl font-bold text-white font-display mb-2">Send a Project Inquiry</h3>
+            <p class="text-slate-400 text-sm mb-6">
+              Fill in your requirement below. You can send it directly via email or one-click send to WhatsApp.
+            </p>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-name" class="block text-xs font-mono text-slate-400 uppercase mb-1">Your Name *</label>
+                  <input type="text" id="form-name" required placeholder="e.g. Sarah Jenkins" 
+                         class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors" />
+                </div>
+                <div>
+                  <label for="form-email" class="block text-xs font-mono text-slate-400 uppercase mb-1">Your Email *</label>
+                  <input type="email" id="form-email" required placeholder="e.g. sarah@company.com" 
+                         class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-phone" class="block text-xs font-mono text-slate-400 uppercase mb-1">Phone / WhatsApp</label>
+                  <input type="tel" id="form-phone" placeholder="e.g. +971 50 123 4567" 
+                         class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors" />
+                </div>
+                <div>
+                  <label for="form-service" class="block text-xs font-mono text-slate-400 uppercase mb-1">Interested Service</label>
+                  <select id="form-service" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                    <option value="Enterprise ERP / Custom Software">Enterprise ERP / Custom Software</option>
+                    <option value="AI Solutions & Intelligent Automation">AI Solutions & Intelligent Automation</option>
+                    <option value="Care4 EMR / Hospital Systems">Care4 EMR / Hospital Systems</option>
+                    <option value="Umbraco CMS & Web Development">Umbraco CMS & Web Development</option>
+                    <option value="Digital Transformation Consulting">Digital Transformation Consulting</option>
+                    <option value="Performance Marketing & SEO">Performance Marketing & SEO</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-message" class="block text-xs font-mono text-slate-400 uppercase mb-1">Project Details / Message *</label>
+                <textarea id="form-message" rows="4" required placeholder="Describe your business goals, required features, timeline, and budget..." 
+                          class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+              </div>
+
+              <!-- Dual Submission Actions -->
+              <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
+                <button type="submit" id="btn-send-email" class="w-full sm:flex-1 py-3.5 px-6 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/20 transition-all flex items-center justify-center gap-2">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Send via Email</span>
+                </button>
+
+                <button type="button" id="btn-send-whatsapp" class="w-full sm:flex-1 py-3.5 px-6 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 transition-all flex items-center justify-center gap-2">
+                  <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Quick WhatsApp Send</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER                                                                    -->
+  <!-- ========================================================================= -->
+  <footer class="py-12 border-t border-slate-900 bg-[#05070a]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1px]">
+            <div class="w-full h-full bg-[#05070a] rounded-[7px] flex items-center justify-center font-display font-bold text-xs text-cyan-400">
+              AS
+            </div>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white font-display">AMEEN SAHIL</div>
+            <div class="text-xs text-slate-500">Entrepreneur & Innovator &middot; Technology Entrepreneur & AI Solutions Developer</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 text-xs text-slate-400">
+          <a href="#hero" class="hover:text-cyan-400 transition-colors">Hero</a>
+          <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+          <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+          <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+          <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+        </div>
+
+        <div class="text-xs text-slate-500 text-center md:text-right">
+          © 2026 Ameen Sahil. All rights reserved.
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- PROJECT TECHNICAL DETAILS MODAL                                           -->
+  <!-- ========================================================================= -->
+  <div id="project-modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/80 backdrop-blur-md p-4 transition-all">
+    <div class="relative w-full max-w-2xl bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-cyan-500/10">
+      <div id="modal-content">
+        <!-- Content dynamically populated by openProjectModal() in main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TOAST NOTIFICATION CONTAINER                                              -->
+  <!-- ========================================================================= -->
+  <div id="toast" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-900 border border-cyan-500/40 text-slate-100 shadow-2xl shadow-cyan-500/20">
+    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+    <span id="toast-message" class="text-xs sm:text-sm font-medium">Copied to clipboard</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
